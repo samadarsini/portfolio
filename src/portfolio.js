@@ -134,6 +134,14 @@ const skillsSection = {
   display: true // Set false to hide this section
 };
 
+const achievementSection = {
+  title: "Achievements",
+  subtitle: "Some highlights from my academic and project journey",
+  achievementsCards: [],
+  display: false // Set to true if you want to show achievements
+};
+
+
 
 export {
   greeting,
@@ -145,6 +153,7 @@ export {
   contactInfo,
   isHireable,
   openSource,
-  skillsSection
+  skillsSection,
+  achievementSection
 };
 
