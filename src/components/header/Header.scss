@@ -61,10 +61,11 @@
 }
 
 .header .logo-name {
-  font-family: "Agustina Regular";
-  font-weight: bold;
-  font-variant-ligatures: no-common-ligatures;
-  -webkit-font-variant-ligatures: no-common-ligatures;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: $accentBright; // or use your own hex like #8261ee
+  letter-spacing: 0.5px;
   padding: 0 10px;
 }
 
