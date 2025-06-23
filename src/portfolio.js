@@ -64,6 +64,25 @@ const degrees = {
   ],
 };
 
+const workExperiences = {
+  experience: [
+    {
+      role: "Graduate Research Assistant - VLSI SoC Lab",
+      company: "University of Maryland, Baltimore County",
+      companylogo: "umbc_logo.png",
+      date: "Jan 2025 – Present",
+      desc: "Developed a 22-layer convolutional autoencoder using HW-SW co-design on DE1-SoC FPGA. Implemented custom Verilog PEs and embedded C pipeline.",
+    },
+    {
+      role: "RTL Design Engineer Intern",
+      company: "Maven Silicon",
+      companylogo: "maven_logo.png",
+      date: "Apr 2023 – Aug 2023",
+      desc: "Designed a RISC-V processor in Verilog and verified using UVM with Synopsys VCS. Simulated end-to-end functionality and debugged pipeline behavior.",
+    }
+  ],
+};
+
 const projects = {
   data: [
     {
@@ -103,4 +122,14 @@ const contactInfo = {
 };
 
 const isHireable = true;
-export { greeting, socialMediaLinks, skills, degrees, projects, contactInfo, isHireable };
+
+export {
+  greeting,
+  socialMediaLinks,
+  skills,
+  degrees,
+  workExperiences,
+  projects,
+  contactInfo,
+  isHireable
+};
