@@ -138,5 +138,7 @@ export {
   workExperiences,
   projects,
   contactInfo,
-  isHireable
+  isHireable,
+  openSource
 };
+
