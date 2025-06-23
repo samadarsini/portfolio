@@ -130,6 +130,11 @@ const openSource = {
   showGithubProfile: "true", // Set true or false to show GitHub section
 };
 
+const skillsSection = {
+  display: true // Set false to hide this section
+};
+
+
 export {
   greeting,
   socialMediaLinks,
