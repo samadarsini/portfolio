@@ -69,7 +69,7 @@ const educationInfo = {
     },
     {
       schoolName: "Gayatri Vidya Parishad College of Engineering",
-      logo: require("./assets/images/gvpce_logo.png"),
+      logo: require("./assets/images/gvpce_logo.jpg"),
       subHeader: "B.Tech in ECE",
       duration: "Sept 2019 – Apr 2023",
       descBullets: ["GPA: 9.31/10"]
@@ -102,7 +102,7 @@ const workExperiences = {
     {
       role: "RTL Design Engineer Intern",
       company: "Maven Silicon",
-      companylogo: require("./assets/images/maven_logo.png"),
+      companylogo: require("./assets/images/maven_logo.jpg"),
       date: "Apr 2023 – Aug 2023",
       desc: "Designed and verified RISC-V processor core, built UVM testbenches, debugged pipeline execution."
     }
