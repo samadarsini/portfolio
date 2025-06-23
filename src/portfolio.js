@@ -102,11 +102,5 @@ const contactInfo = {
   linkedin: "https://www.linkedin.com/in/sri-samadarsini-vemulapalli/"
 };
 
-export {
-  greeting,
-  socialMediaLinks,
-  skills,
-  degrees,
-  projects,
-  contactInfo
-};
+const isHireable = true;
+export { greeting, socialMediaLinks, skills, degrees, projects, contactInfo, isHireable };
