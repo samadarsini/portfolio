@@ -144,6 +144,7 @@ export {
   projects,
   contactInfo,
   isHireable,
-  openSource
+  openSource,
+  skillsSection
 };
 
