@@ -1,167 +1,214 @@
+import emoji from "react-easy-emoji";
+import splashAnimation from "./assets/lottie/splashAnimation";
+
+// Splash Screen
+const splashScreen = {
+  enabled: true,
+  animation: splashAnimation,
+  duration: 2000
+};
+
+// Illustration
+const illustration = {
+  animated: true
+};
+
+// Greeting
 const greeting = {
   username: "Sri Samadarsini Vemulapalli",
   title: "Hi, I'm Sri Samadarsini",
-  subTitle: "Graduate Student | RTL & FPGA Designer | Hardware-Software Co-Designer",
-  resumeLink: "",
+  subTitle: emoji(
+    "Graduate student in Computer Engineering | RTL & FPGA Design | Hardware-Software Co-Design | VLSI Verification & Physical Design Enthusiast ⚡"
+  ),
+  resumeLink: "", 
+  displayGreeting: true
 };
 
+// Social Media
 const socialMediaLinks = {
   github: "https://github.com/samadarsini",
   linkedin: "https://www.linkedin.com/in/sri-samadarsini-vemulapalli/",
   gmail: "srisamadarsini77@gmail.com",
-  phone: "+1 (443) 514-9006",
+  display: true
 };
 
-const skills = {
-  data: [
-    {
-      title: "Digital Design & FPGA Prototyping",
-      skills: [
-        "⚡ Designing RTL modules using Verilog, SystemVerilog and VHDL",
-        "⚡ Developing matrix accelerators, convolution modules, and IPs for FPGAs",
-        "⚡ Using FSMs and Avalon-MM interfaces for hardware-software communication"
-      ],
-      softwareSkills: [
-        { skillName: "Verilog", fontAwesomeClassname: "logos:verilog" },
-        { skillName: "SystemVerilog", fontAwesomeClassname: "logos:verilog" },
-        { skillName: "Quartus", fontAwesomeClassname: "logos:intel" },
-        { skillName: "Vivado", fontAwesomeClassname: "logos:xilinx" },
-        { skillName: "Synopsys", fontAwesomeClassname: "logos:synopsys" },
-      ],
-    },
-    {
-      title: "Functional Verification & DFT",
-      skills: [
-        "⚡ Verifying RISC-V cores using SystemVerilog and UVM",
-        "⚡ Performing scan insertion and ATPG using Synopsys TetraMAX",
-        "⚡ Working knowledge of test generation, partial scan, and BIST techniques"
-      ],
-    },
+// Skills
+const skillsSection = {
+  title: "What I Do",
+  subTitle: "DIGITAL DESIGNER WITH STRONG RTL + FPGA + SYSTEM INTEGRATION SKILLS",
+  skills: [
+    emoji("⚡ RTL Design using Verilog/SystemVerilog for ASIC/FPGA"),
+    emoji("⚡ Hardware acceleration of deep learning models (CNN Autoencoders)"),
+    emoji("⚡ SoC design, synthesis, physical design & functional verification"),
+    emoji("⚡ Hardware-software co-design using C and Avalon-MM interface")
   ],
-};
-
-const degrees = {
-  degrees: [
-    {
-      title: "University of Maryland, Baltimore County",
-      subtitle: "M.S. in Computer Engineering",
-      logo_path: "umbc_logo.png",
-      alt_name: "UMBC",
-      duration: "2023 - 2025",
-      descriptions: [
-        "⚡ Courses: VLSI Design, Reconfigurable Systems, VLSI Verification, Computer Arithmetic",
-        "⚡ Projects: Convolutional Autoencoder, Verilog Coder, Matrix Accelerator"
-      ],
-    },
-    {
-      title: "Gayatri Vidya Parishad College of Engineering",
-      subtitle: "B.Tech in ECE",
-      logo_path: "gvpce_logo.png",
-      alt_name: "GVPCE",
-      duration: "2019 - 2023",
-      descriptions: ["⚡ GPA: 9.31/10.00"],
-    },
+  softwareSkills: [
+    { skillName: "Verilog", fontAwesomeClassname: "logos:verilog" },
+    { skillName: "SystemVerilog", fontAwesomeClassname: "logos:verilog" },
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "Quartus", fontAwesomeClassname: "logos:intel" },
+    { skillName: "Vivado", fontAwesomeClassname: "logos:xilinx" },
+    { skillName: "Synopsys", fontAwesomeClassname: "logos:synopsys" },
+    { skillName: "C", fontAwesomeClassname: "logos:c" }
   ],
+  display: true
 };
 
+// Education
+const educationInfo = {
+  display: true,
+  schools: [
+    {
+      schoolName: "University of Maryland, Baltimore County",
+      logo: require("./assets/images/umbc_logo.png"),
+      subHeader: "M.S. in Computer Engineering",
+      duration: "Aug 2023 – May 2025",
+      descBullets: [
+        "VLSI Design, Reconfigurable Systems, Verification, Computer Architecture"
+      ]
+    },
+    {
+      schoolName: "Gayatri Vidya Parishad College of Engineering",
+      logo: require("./assets/images/gvpce_logo.png"),
+      subHeader: "B.Tech in ECE",
+      duration: "Sept 2019 – Apr 2023",
+      descBullets: ["GPA: 9.31/10"]
+    }
+  ]
+};
+
+// Tech Stack Bars
+const techStack = {
+  viewSkillBars: true,
+  experience: [
+    { Stack: "RTL Design", progressPercentage: "90%" },
+    { Stack: "FPGA/Hardware Acceleration", progressPercentage: "85%" },
+    { Stack: "Verification & DFT", progressPercentage: "75%" }
+  ],
+  displayCodersrank: false
+};
+
+// Work Experience
 const workExperiences = {
+  display: true,
   experience: [
     {
-      role: "Graduate Research Assistant - VLSI SoC Lab",
-      company: "University of Maryland, Baltimore County",
-      companylogo: "umbc_logo.png",
+      role: "Graduate Research Assistant",
+      company: "UMBC – VLSI SoC Lab",
+      companylogo: require("./assets/images/umbc_logo.png"),
       date: "Jan 2025 – Present",
-      desc: "Developed a 22-layer convolutional autoencoder using HW-SW co-design on DE1-SoC FPGA. Implemented custom Verilog PEs and embedded C pipeline.",
+      desc: "Built a 22-layer convolutional autoencoder on FPGA using INT8 PEs and Avalon-MM communication with embedded C."
     },
     {
       role: "RTL Design Engineer Intern",
       company: "Maven Silicon",
-      companylogo: "maven_logo.png",
+      companylogo: require("./assets/images/maven_logo.png"),
       date: "Apr 2023 – Aug 2023",
-      desc: "Designed a RISC-V processor in Verilog and verified using UVM with Synopsys VCS. Simulated end-to-end functionality and debugged pipeline behavior.",
+      desc: "Designed and verified RISC-V processor core, built UVM testbenches, debugged pipeline execution."
     }
-  ],
+  ]
 };
 
-const projects = {
-  data: [
-    {
-      title: "Convolutional Autoencoder on FPGA",
-      description: "22-layer INT8 autoencoder with 87.58% accuracy on DE1-SoC using memory-mapped Verilog PEs.",
-      url: "https://github.com/samadarsini/Matrix-Convolution-Hardware-Accelerator"
-    },
-    {
-      title: "Verilog Coder using LLM",
-      description: "Auto-generates Verilog from natural language; verified 75% of generated designs, 27% area reduction.",
-      url: "https://github.com/samadarsini/Verilog_Coder-Verilog-Code-Generation-using-LLM-and-Evaluation-using-DC-and-ICC2-tools"
-    },
-    {
-      title: "RISC-V RTL Design & Verification",
-      description: "5-stage pipelined RISC-V processor with SystemVerilog testbenches and UVM verification.",
-    },
-    {
-      title: "Direct Mapped Cache Design",
-      description: "Designed and laid out a byte-addressable cache block in 45nm Cadence Virtuoso.",
-      url: "https://github.com/samadarsini/Direct-Mapped-Cache-Design"
-    },
-    {
-      title: "ATPG Scheme Comparison",
-      description: "Analyzed random vs deterministic ATPG using TetraMAX with scan/partial scan chains.",
-      url: "https://github.com/samadarsini/Comparison-of-Test-Generation-Schemes-for-Sequential-Circuits"
-    }
-  ],
+// Open Source
+const openSource = {
+  showGithubProfile: "true",
+  display: true
 };
 
+// Big Projects
+const bigProjects = {
+  title: "Major Projects",
+  subtitle: "Hardware Projects and Accelerators",
+  projects: [
+    {
+      image: require("./assets/images/project.png"),
+      projectName: "Autoencoder Accelerator",
+      projectDesc: "22-layer quantized CNN encoder with RTL modules for FPGA.",
+      footerLink: [{ name: "GitHub", url: "https://github.com/samadarsini/Matrix-Convolution-Hardware-Accelerator" }]
+    },
+    {
+      image: require("./assets/images/project.png"),
+      projectName: "Verilog Coder",
+      projectDesc: "Natural language to Verilog compiler + DC/ICC2 evaluation.",
+      footerLink: [{ name: "GitHub", url: "https://github.com/samadarsini/Verilog_Coder-Verilog-Code-Generation-using-LLM-and-Evaluation-using-DC-and-ICC2-tools" }]
+    }
+  ],
+  display: true
+};
+
+// Achievements
+const achievementSection = {
+  title: emoji("Achievements 🏆"),
+  subtitle: "Competitions and Research Milestones",
+  achievementsCards: [],
+  display: false
+};
+
+// Blogs
+const blogSection = {
+  title: "Blogs",
+  subtitle: "Technical writing and VLSI documentation (coming soon)",
+  displayMediumBlogs: "false",
+  blogs: [],
+  display: false
+};
+
+// Talks
+const talkSection = {
+  title: "Talks",
+  subtitle: "Guest lectures or academic presentations (coming soon)",
+  talks: [],
+  display: false
+};
+
+// Podcasts
+const podcastSection = {
+  title: emoji("Podcast 🎙️"),
+  subtitle: "Coming soon: Tech talks and research discussion",
+  podcast: [],
+  display: false
+};
+
+// Resume
+const resumeSection = {
+  title: "Resume",
+  subtitle: "Download my resume (PDF link coming soon)",
+  display: true
+};
+
+// Contact
 const contactInfo = {
-  title: "Contact Me",
-  subtitle: "Let's connect!",
-  email_address: "srisamadarsini77@gmail.com",
-  phone: "+1 (443) 514-9006",
-  github: "https://github.com/samadarsini",
-  linkedin: "https://www.linkedin.com/in/sri-samadarsini-vemulapalli/"
+  title: emoji("Contact Me ☎️"),
+  subtitle: "Reach out for collaboration or research discussion",
+  number: "+1 (443) 514-9006",
+  email_address: "srisamadarsini77@gmail.com"
 };
 
+// Twitter
+const twitterDetails = {
+  userName: "srisamadarsini",
+  display: false
+};
 
 const isHireable = true;
 
-const openSource = {
-  githubToken: "",
-  githubUsername: "samadarsini",
-  showGithubProfile: "true", // Set true or false to show GitHub section
-};
-
-const skillsSection = {
-  display: true // Set false to hide this section
-};
-
-const achievementSection = {
-  title: "Achievements",
-  subtitle: "Some highlights from my academic and project journey",
-  achievementsCards: [],
-  display: false // Set to true if you want to show achievements
-};
-
-const blogSection = {
-  title: "Blogs",
-  subtitle: "I write about hardware design, RTL, and FPGA-based acceleration.",
-  displayMediumBlogs: "false", // Set to "true" if you want to fetch from Medium
-  blogs: [],
-  display: false // Change to true if you want to show blogs section
-};
-
-
 export {
+  illustration,
   greeting,
   socialMediaLinks,
-  skills,
-  degrees,
-  workExperiences,
-  projects,
-  contactInfo,
-  isHireable,
-  openSource,
+  splashScreen,
   skillsSection,
+  educationInfo,
+  techStack,
+  workExperiences,
+  openSource,
+  bigProjects,
   achievementSection,
-  blogSection
+  blogSection,
+  talkSection,
+  podcastSection,
+  contactInfo,
+  twitterDetails,
+  isHireable,
+  resumeSection
 };
-
