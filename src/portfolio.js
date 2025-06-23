@@ -141,6 +141,13 @@ const achievementSection = {
   display: false // Set to true if you want to show achievements
 };
 
+const blogSection = {
+  title: "Blogs",
+  subtitle: "I write about hardware design, RTL, and FPGA-based acceleration.",
+  displayMediumBlogs: "false", // Set to "true" if you want to fetch from Medium
+  blogs: [],
+  display: false // Change to true if you want to show blogs section
+};
 
 
 export {
@@ -154,6 +161,7 @@ export {
   isHireable,
   openSource,
   skillsSection,
-  achievementSection
+  achievementSection,
+  blogSection
 };
 
