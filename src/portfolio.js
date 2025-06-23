@@ -121,7 +121,14 @@ const contactInfo = {
   linkedin: "https://www.linkedin.com/in/sri-samadarsini-vemulapalli/"
 };
 
+
 const isHireable = true;
+
+const openSource = {
+  githubToken: "",
+  githubUsername: "samadarsini",
+  showGithubProfile: "true", // Set true or false to show GitHub section
+};
 
 export {
   greeting,
