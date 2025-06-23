@@ -66,6 +66,63 @@
   transform-origin: 70% 70%;
 }
 
+.greeting-centered {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greeting-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.highlight-name {
+  color: #8261ee;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #8261ee;
+  margin-bottom: 20px;
+}
+
+.badge-container {
+  margin: 1rem 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin: 4px;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.badge.purple {
+  background-color: #8261ee;
+}
+.badge.blue {
+  background-color: #3f8efc;
+}
+.badge.gray {
+  background-color: #7a7f85;
+}
+
+.greeting-subtitle {
+  font-size: 1.1rem;
+  color: gray;
+  max-width: 600px;
+}
+
+
 @keyframes wave {
   0% {
     transform: rotate(0deg);
